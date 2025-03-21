@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Salt Lake Tech Solutions",
+        "address": "1234 Silicon Avenue, Salt Lake City, UT 84101",
+        "phone number": "(385) 555-1234",
+        "url": "https://www.saltlaketechsolutions.com",
+        "image": "",
+        "membership level": 3
+    },
+    {
+        "name": "Mountain View Coffee Roasters",
+        "address": "5678 Coffee Lane, Provo, UT 84604",
+        "phone number": "(801) 555-5678",
+        "url": "https://www.mountainviewcoffeeroasters.com",
+        "image": "",
+        "membership level": 2
+    },
+    {
+        "name": "Wasatch Outdoor Gear",
+        "address": "9102 Trailhead Blvd, Sandy, UT 84094",
+        "phone number": "(385) 555-9102",
+        "url": "https://www.wasatchoutdoorgear.com",
+        "image": "",
+        "membership level": 2
+    },
+    {
+        "name": "Red Rock Digital Marketing",
+        "address": "1010 Digital Way, Salt Lake City, UT 84105",
+        "phone number": "(385) 555-1010",
+        "url": "https://www.redrockdigitalmarketing.com",
+        "image": "",
+        "membership level": 3
+    },
+    {
+        "name": "The Greenhouse Florists",
+        "address": "2022 Garden Parkway, Murray, UT 84107",
+        "phone number": "(385) 555-2022",
+        "url": "https://www.greenhouseflorists.com",
+        "image": "",
+        "membership level": 1
+    },
+    {
+        "name": "Salt Lake Bicycle Repair",
+        "address": "3033 Pedal Avenue, West Valley City, UT 84119",
+        "phone number": "(385) 555-3033",
+        "url": "https://www.saltlakebicyclerepair.com",
+        "image": "",
+        "membership level": 1
+    },
+    {
+        "name": "Alpine Innovations",
+        "address": "4044 Innovation Circle, Draper, UT 84020",
+        "phone number": "(385) 555-4044",
+        "url": "https://www.alpineinnovations.com",
+        "image": "",
+        "membership level": 1
+    }
+]

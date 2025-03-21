@@ -1,0 +1,25 @@
+.directory-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #0055A4;
+    color: #FFF8E1;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.lower-content {
+    display: flex;
+}
