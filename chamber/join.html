@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory Page of the Chamber of Commerce Site for Michael Miller's WDD 231 Course">
+    <meta name="description" content="Join Page of the Chamber of Commerce Site for Michael Miller's WDD 231 Course">
     <meta name="author" content="Michael Miller">
-    <meta property="og:title" content="Salt Lake Chamber of Commerce Directory | Michael Miller WDD 231">
+    <meta property="og:title" content="Salt Lake Chamber of Commerce Join | Michael Miller WDD 231">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.michael6520.github.io/wdd231/chamber/images/social-media-preview.jpg">
-    <meta property="og:url" content="https://www.michael6520.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://www.michael6520.github.io/wdd231/chamber/join.html">
     <title>Salt Lake Chamber of Commerce Directory | Michael Miller WDD 231</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/grid-list-toggle.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="header-container">
@@ -37,17 +35,146 @@
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="dicover.html">Discover</a>
-        </nav>        
+        </nav>
     </div>
     <main>
-        <div class="main-top">
-            <h1>Directory</h1>
-            <div class="view-toggle">
-                <button id="gridViewBtn" class="active"><i class="fas fa-th-large"></i></button>
-                <button id="listViewBtn"><i class="fas fa-list"></i></button>
+        <h1>Join</h1>
+        <div class="join-container">
+            <form method="get" action="thankyou.html">
+                <h2>Membership Application</h2>
+                <label title="Enter your first name">
+                    First Name
+                    <input type="text" name="firstName" required autocomplete="given-name" title="First name">
+                </label>
+                <label title="Enter your last name">
+                    Last Name
+                    <input type="text" name="lastName" required autocomplete="family-name" title="Last name">
+                </label>
+                <label title="Enter your organizational title">
+                    Organizational Title
+                    <input
+                        type="text"
+                        name="orgTitle"
+                        autocomplete="organization-title"
+                        title="Organizational title within your company"
+                        placeholder="e.g. Director of Operations"
+                    >
+                </label>
+                <label title="Enter your email address">
+                    Email Address
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        placeholder="e.g. name@example.com"
+                        title="Your email address"
+                    >
+                </label>
+                <label title="Enter your mobile phone number">
+                    Mobile Phone Number
+                    <input
+                        type="tel"
+                        name="mobile"
+                        required
+                        autocomplete="tel"
+                        title="Your mobile phone number"
+                    >
+                </label>
+                <label title="Enter your organization name">
+                    Organization Name
+                    <input
+                        type="text"
+                        name="organization"
+                        required
+                        autocomplete="organization"
+                        title="Your organization or business name"
+                    >
+                </label>
+                <label title="Select your membership level">
+                    Membership Level
+                    <select name="membership" title="Membership level">
+                        <option value="NP Membership">Non-Profit Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label title="Describe your organization">
+                    Organization Description
+                    <textarea
+                        name="description"
+                        rows="4"
+                        title="Business or organization description"
+                    ></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Submit Application</button>
+            </form>
+            <div class="membership-container">
+                <h2>Membership Levels</h2>
+                <section class="membership-card">
+                    <h3>Non-Profit Membership</h3>
+                    <button id="np">Learn More</button>
+                    <div id="npModal" class="modal">
+                        <h4>Non-Profit Membership</h4>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>Access to a resource library with free webinars, articles, and guides</li>
+                            <li>Receive invitations to community webinars and online workshops</li>
+                            <li>A listing in the organization's member directory</li>
+                            <li>Early access to volunteer roles at events, giving back to the community</li>
+                        </ul>
+                        <h5>Yearly Fee: $0</h5>
+                    </div>
+                </section>
+                <section class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <button id="bronze">Learn More</button>
+                    <div id="bronzeModal" class="modal">
+                        <h4>Bronze Membership</h4>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>Everything from the Non-Profit Membership</li>
+                            <li>Access to a wider library of content, such as specialized training and professional development webinars</li>
+                            <li>Join an exclusive community of members to ask questions, share resources, and network</li>
+                            <li>20% off access to events and workshops</li>
+                        </ul>
+                        <h5>Yearly Fee: $100</h5>
+                    </div>
+                </section>
+                <section class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <button id="silver">Learn More</button>
+                    <div id="silverModal" class="modal">
+                        <h4>Silver Membership</h4>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>Everything from the Bronze Membership</li>
+                            <li>A chance to appear in the spotlight position on the homepage</li>
+                            <li>Be the first to know about new resources, tools, and programs launched by the organization</li>
+                            <li>Priority registration and 50% off access to events and workshops</li>
+                        </ul>
+                        <h5>Yearly Fee: $400</h5>
+                    </div>
+                </section>
+                <section class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <button id="gold">Learn More</button>
+                    <div id="goldModal" class="modal">
+                        <h4>Gold Membership</h4>
+                        <h5>Benefits</h5>
+                        <ul>
+                            <li>Everything from the Silver Membership</li>
+                            <li>Complimentary access to all major conferences and events, including VIP seating and exclusive sessions</li>
+                            <li>Opportunity to sponsor events with you business or logo featured prominently</li>
+                            <li>Access to high-end, industry-specific training programs and certifications</li>
+                        </ul>
+                        <h5>Yearly Fee: $900</h5>
+                    </div>
+                </section>
             </div>
         </div>
-        <div id="directoryContainer" class="directory-card-container"></div>
     </main>
     <footer>
         <div class="footer-contact">
