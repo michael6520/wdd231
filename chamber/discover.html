@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join Page of the Chamber of Commerce Site for Michael Miller's WDD 231 Course">
+    <meta name="description" content="Discover Page of the Chamber of Commerce Site for Michael Miller's WDD 231 Course">
     <meta name="author" content="Michael Miller">
-    <meta property="og:title" content="Salt Lake Chamber of Commerce Join | Michael Miller WDD 231">
+    <meta property="og:title" content="Salt Lake Chamber of Commerce Discover | Michael Miller WDD 231">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.michael6520.github.io/wdd231/chamber/images/social-media-preview.jpg">
-    <meta property="og:url" content="https://www.michael6520.github.io/wdd231/chamber/join.html">
+    <meta property="og:url" content="https://www.michael6520.github.io/wdd231/chamber/discover.html">
     <title>Salt Lake Chamber of Commerce Directory | Michael Miller WDD 231</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="header-container">
@@ -38,143 +39,82 @@
         </nav>
     </div>
     <main>
-        <h1>Join</h1>
-        <div class="join-container">
-            <form method="get" action="thankyou.html">
-                <h2>Membership Application</h2>
-                <label title="Enter your first name">
-                    First Name
-                    <input type="text" name="firstName" required autocomplete="given-name" title="First name">
-                </label>
-                <label title="Enter your last name">
-                    Last Name
-                    <input type="text" name="lastName" required autocomplete="family-name" title="Last name">
-                </label>
-                <label title="Enter your organizational title">
-                    Organizational Title
-                    <input
-                        type="text"
-                        name="orgTitle"
-                        autocomplete="organization-title"
-                        title="Organizational title within your company"
-                        placeholder="e.g. Director of Operations"
-                    >
-                </label>
-                <label title="Enter your email address">
-                    Email Address
-                    <input
-                        type="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder="e.g. name@example.com"
-                        title="Your email address"
-                    >
-                </label>
-                <label title="Enter your mobile phone number">
-                    Mobile Phone Number
-                    <input
-                        type="tel"
-                        name="mobile"
-                        required
-                        autocomplete="tel"
-                        title="Your mobile phone number"
-                    >
-                </label>
-                <label title="Enter your organization name">
-                    Organization Name
-                    <input
-                        type="text"
-                        name="organization"
-                        required
-                        autocomplete="organization"
-                        title="Your organization or business name"
-                    >
-                </label>
-                <label title="Select your membership level">
-                    Membership Level
-                    <select name="membership" title="Membership level">
-                        <option value="NP Membership">Non-Profit Membership</option>
-                        <option value="Bronze Membership">Bronze Membership</option>
-                        <option value="Silver Membership">Silver Membership</option>
-                        <option value="Gold Membership">Gold Membership</option>
-                    </select>
-                </label>
-                <label title="Describe your organization">
-                    Organization Description
-                    <textarea
-                        name="description"
-                        rows="4"
-                        title="Business or organization description"
-                    ></textarea>
-                </label>
-                <input type="hidden" id="timestamp" name="timestamp">
-                <button type="submit">Submit Application</button>
-            </form>
-            <div class="membership-container">
-                <h2>Membership Levels</h2>
-                <section class="membership-card">
-                    <h3>Non-Profit Membership</h3>
-                    <button id="np">Learn More</button>
-                    <div id="npModal" class="modal">
-                        <h4>Non-Profit Membership</h4>
-                        <h5>Benefits</h5>
-                        <ul>
-                            <li>Access to a resource library with free webinars, articles, and guides</li>
-                            <li>Receive invitations to community webinars and online workshops</li>
-                            <li>A listing in the organization's member directory</li>
-                            <li>Early access to volunteer roles at events, giving back to the community</li>
-                        </ul>
-                        <h5>Yearly Fee: $0</h5>
-                    </div>
-                </section>
-                <section class="membership-card">
-                    <h3>Bronze Membership</h3>
-                    <button id="bronze">Learn More</button>
-                    <div id="bronzeModal" class="modal">
-                        <h4>Bronze Membership</h4>
-                        <h5>Benefits</h5>
-                        <ul>
-                            <li>Everything from the Non-Profit Membership</li>
-                            <li>Access to a wider library of content, such as specialized training and professional development webinars</li>
-                            <li>Join an exclusive community of members to ask questions, share resources, and network</li>
-                            <li>20% off access to events and workshops</li>
-                        </ul>
-                        <h5>Yearly Fee: $100</h5>
-                    </div>
-                </section>
-                <section class="membership-card">
-                    <h3>Silver Membership</h3>
-                    <button id="silver">Learn More</button>
-                    <div id="silverModal" class="modal">
-                        <h4>Silver Membership</h4>
-                        <h5>Benefits</h5>
-                        <ul>
-                            <li>Everything from the Bronze Membership</li>
-                            <li>A chance to appear in the spotlight position on the homepage</li>
-                            <li>Be the first to know about new resources, tools, and programs launched by the organization</li>
-                            <li>Priority registration and 50% off access to events and workshops</li>
-                        </ul>
-                        <h5>Yearly Fee: $400</h5>
-                    </div>
-                </section>
-                <section class="membership-card">
-                    <h3>Gold Membership</h3>
-                    <button id="gold">Learn More</button>
-                    <div id="goldModal" class="modal">
-                        <h4>Gold Membership</h4>
-                        <h5>Benefits</h5>
-                        <ul>
-                            <li>Everything from the Silver Membership</li>
-                            <li>Complimentary access to all major conferences and events, including VIP seating and exclusive sessions</li>
-                            <li>Opportunity to sponsor events with you business or logo featured prominently</li>
-                            <li>Access to high-end, industry-specific training programs and certifications</li>
-                        </ul>
-                        <h5>Yearly Fee: $900</h5>
-                    </div>
-                </section>
-            </div>
+        <h1>Discover</h1>
+        <div class="gridarea">
+            <section class="interest">
+                <h2>Temple Square</h2>
+                <figure>
+                    <img src="images/temple-square.webp" alt="Temple Square">
+                </figure>
+                <address>50 North Temple, Salt Lake City, UT 84150</address>
+                <p>A historic 10-acre site in downtown Salt Lake City, home to the Salt Lake Temple and the headquarters of The Church of Jesus Christ of Latter-day Saints, offering stunning architecture and gardens.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Liberty Park</h2>
+                <figure>
+                    <img src="images/liberty-park.webp" alt="Liberty Park">
+                </figure>
+                <address>600 Harvey Milk Blvd, Salt Lake City, UT 84105</address>
+                <p>A large public park in Salt Lake City featuring walking paths, a pond, sports facilities, playgrounds, and the Utah Museum of Fine Arts.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Great Salt Lake</h2>
+                <figure>
+                    <img src="images/great-salt-lake.webp" alt="Great Salt Lake">
+                </figure>
+                <address>13312 West 1075, South Magna, UT 84044</address>
+                <p>The largest saltwater lake in the Western Hemisphere, known for its unique ecosystem, stunning views, and recreational activities like sailing and birdwatching.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Antelope Island</h2>
+                <figure>
+                    <img src="images/antelope-island.webp" alt="Antelope Island">
+                </figure>
+                <address>4528 West 1700, South Syracuse, UT 84075</address>
+                <p>A scenic island in the Great Salt Lake, offering hiking, wildlife viewing, and breathtaking views of the lake and surrounding mountains.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Big Cottonwood Canyon</h2>
+                <figure>
+                    <img src="images/big-cottonwood.webp" alt="Big Cottonwood">
+                </figure>
+                <address>4010 Big Cottonwood Cyn Rd, Cottonwood Heights, UT 84121</address>
+                <p>A beautiful canyon in the Wasatch Mountains, popular for hiking, skiing, and scenic drives, featuring alpine lakes and rugged landscapes.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Red Butte Garden</h2>
+                <figure>
+                    <img src="images/red-butte-garden.webp" alt="Red Butte Garden">
+                </figure>
+                <address>300 Wakara Way, Salt Lake City, UT 84108</address>
+                <p>A botanical garden and arboretum in Salt Lake City, known for its diverse plant collections, themed gardens, and outdoor concerts.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>Leondaro Museum</h2>
+                <figure>
+                    <img src="images/leonardo-museum.webp" alt="Leonardo Museum">
+                </figure>
+                <address>209 E 500 S, Salt Lake City, UT 84111</address>
+                <p>A museum in Salt Lake City that focuses on the intersection of art, science, and technology, offering interactive exhibits and thought-provoking displays.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="interest">
+                <h2>The Natural History Museum of Utah</h2>
+                <figure>
+                    <img src="images/natural-history-museum.webp" alt="Natural History Museum of Utah">
+                </figure>
+                <address>301 Wakara Way, Salt Lake City, UT 84108</address>
+                <p>A museum showcasing Utah's natural history, including dinosaur fossils, Native American artifacts, and exhibits on geology and ecology.</p>
+                <button>Learn More</button>
+            </section>
         </div>
+        <section id="visitor-section" class="visitor-message"><span  id="visitor-message" ></span><span class="close">Click to close</span></section>
     </main>
     <footer>
         <div class="footer-contact">
