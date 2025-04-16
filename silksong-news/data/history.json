@@ -1,0 +1,134 @@
+[
+    {
+        "date": "February 13, 2019",
+        "content": "Hollow Knight: Silksong is revealed",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "February 14, 2019",
+        "content": "The steam store page is live",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "April 25, 2019",
+        "content": "Nintendo claims the game will release within the fiscal year",
+        "status": "False",
+        "source": "Nintendo"
+    },
+    {
+        "date": "June 10, 2019",
+        "content": "Nintendo announces there will be a playable demo at the Nintendo E3 event",
+        "status": "True",
+        "source": "Nintendo"
+    },
+    {
+        "date": "June 12, 2019",
+        "content": "Nintendo uploads a playthrough of the Demo to YouTube",
+        "status": "True",
+        "source": "Nintendo"
+    },
+    {
+        "date": "October 9, 2019",
+        "content": "Team Cherry announces there will be a playable demo at the PAX Aus event",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "January 19, 2020",
+        "content": "Nintendo makes another claim that the game will release within the fiscal year",
+        "status": "False",
+        "source": "Nintendo"
+    },
+    {
+        "date": "June 14, 2020",
+        "content": "Leth posts a riddle with info about 'Huntress'",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "June 21, 2020",
+        "content": "Leth posts a riddle with info about 'Grindle'",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "June 28, 2020",
+        "content": "Leth posts a riddle with info about 'Caravan'",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "July 4, 2020",
+        "content": "Leth posts a riddle with info about 'Seth'",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "August 20, 2020",
+        "content": "Silksong's logo is part of the Nintendo Indie world's infographic",
+        "status": "-",
+        "source": "Nintendo"
+    },
+    {
+        "date": "December 30, 2020",
+        "content": "Edge Magazine interview with Team Cherry published",
+        "status": "True",
+        "source": "Edge Magazine"
+    },
+    {
+        "date": "September 14, 2021",
+        "content": "Nvidia DB leak shows a release date of February 15, 2022",
+        "status": "False",
+        "source": "Nvidia"
+    },
+    {
+        "date": "June 11, 2022",
+        "content": "New trailer at the Xbox Games Showcase",
+        "status": "True",
+        "source": "Xbox"
+    },
+    {
+        "date": "June 12, 2022",
+        "content": "Xbox claims the game will release within the fiscal year",
+        "status": "False",
+        "source": "Xbox"
+    },
+    {
+        "date": "May 10, 2023",
+        "content": "Leth announces that game will not release in 2023",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "March 17, 2024",
+        "content": "Leth confirms that Silksong will release before 'Crowsworn",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "April 1, 2024",
+        "content": "Silksong gets an ESRB rating",
+        "status": "-",
+        "source": "ESRB"
+    },
+    {
+        "date": "January 15, 2025",
+        "content": "William Pellen tweets a cryptic message that led people to believe news was coming on April 2",
+        "status": "True",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "January 17, 2025",
+        "content": "Leth announces the connection between William's tweet and April 2 were purely coincidental",
+        "status": "False",
+        "source": "Team Cherry"
+    },
+    {
+        "date": "April 2, 2025",
+        "content": "Silksong appears at a Nintendo Direct with a 2025 release window",
+        "status": "True",
+        "source": "Nintendo"
+    }
+]

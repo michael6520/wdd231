@@ -1,0 +1,92 @@
+header img {
+    object-position: 40% 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.release {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    margin: 20px 0 30px 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    font-size: 72px;
+
+}
+
+.release-status {
+    color: red;
+}
+
+.release-date {
+    color: green;
+}
+
+h3 {
+    color: #DDD;
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.video {
+    margin: 20px;
+    width: calc(100% - 40px);
+    aspect-ratio: 16 / 9;
+    border-radius: 12px 0;
+}
+
+.recent-events {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.recent-events h2 {
+    margin-left: 0;
+}
+
+.event {
+    margin: 20px 20px 0 20px;
+    background: #151515;
+    color: #DDD;
+    padding: 20px;
+    border: 2px solid #DDD;
+    border-radius: 12px 0;
+}
+
+.recent {
+    flex: 1;
+}
+
+#rumor {
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+h4 {
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

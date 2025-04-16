@@ -1,0 +1,141 @@
+body {
+    background: black;
+    margin: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header img {
+    width: 100%; height: 100vh;
+    object-fit: cover;
+}
+
+.countdown {
+    position: absolute;
+    top: 50px; left: 50px;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    position: absolute;
+    top: 50px; right: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: bold;
+    transition: text-shadow 0.2s ease;
+    padding: 0 3vw;
+}
+
+nav a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgb(65, 0, 0), rgb(100, 0, 0));
+    color: white;
+    position: relative;
+}
+
+footer div {
+    padding: 50px;
+    font-size: 1vw;
+}
+
+footer img {
+    width: 200px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    nav.menu {
+        display: flex;
+        flex-direction: column;
+        top: 100px; right: 50px;
+        text-align: right;
+    }
+
+    nav.menu a {
+        padding: 10px 0 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 50px; right: 50px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    footer p {
+        padding: 5px;
+        margin: 0;
+    }
+
+    footer img {
+        width: 100px;
+        position: static;
+        transform: translate(0, 0);
+    }
+}

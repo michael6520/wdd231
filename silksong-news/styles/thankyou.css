@@ -1,0 +1,52 @@
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 12vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header img {
+    height: 12vh;
+    object-position: 50% 65%;
+}
+
+nav, .countdown {
+    top: 6vh;
+    transform: translate(0, -50%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: static;
+    transform: translate(0, 0);
+    font-family: 'Cinzel', serif;
+    color: #DDD;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.subtitle {
+    color: #DDD;
+    margin: 0;
+    opacity: 1;
+}
+
+.info {
+    background: #151515;
+    border-radius: 12px 0;
+    border: 2px solid #DDD;
+    color: #DDD;
+    width: 40%;
+    list-style: none;
+    padding: 10px;
+}
+
+.info li {
+    margin: 10px;
+}

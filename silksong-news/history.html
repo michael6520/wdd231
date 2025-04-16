@@ -3,60 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hollow Knight: Silksong News | Home</title>
-        <meta name="description" content="Home page for the WDD 231 final project">
+        <title>Hollow Knight: Silksong News | History</title>
+        <meta name="description" content="History page for the WDD 231 final project">
         <meta name="author" content="Michael Miller">
         <meta property="og:title" content="Hollow Knight: Silksong News">
         <meta property="og:description" content="Daily updates on the highly anticipated video game Hollow Knight: Silksong">
         <meta property="og:image" content="https://michael6520.github.io/silksong-news/images/social-media-img.webp">
         <meta property="og:type" content="website">
         <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/history.css">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script type="module" src="scripts/index.js" defer></script>
+        <script type="module" src="scripts/history.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="images/hero.jpg" alt="Silksong Banner" loading="lazy">
-            <div id="countdown" class="countdown"></div>
+            <img src="images/hero-history.jpg" alt="Silksong Banner" loading="lazy">
+            <div id="countdown" class="countdown">Loading Countdown...</div>
             <button id="hamburger" class="hamburger">&#9776;</button>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="history.html">History</a>
                 <a href="newsletter.html">Newsletter</a>
             </nav>
-            <h1>Hollow Knight: Silksong News</h1>
+            <h1>Hollow Knight: Silksong History</h1>
         </header>
         <main>
-            <div class="release">
-                <h3>Is Silksong Out?</h3>
-                <h2 class="release-status">No</h2>
-            </div> 
-            <div id="latest-vid"></div>                
-            <div class="recent-events">
-                <div class="recent event">
-                    <h4>Recent News</h4>
-                    <ul id="recent-events"></ul>
+            <div class="top-three">
+                <div class="key">
+                    <p class="true">True</p>
+                    <p class="unconfirmed">Unconfirmed/Meaningless</p>
+                    <p class="false">False</p>
                 </div>
-                <div id="rumor" class="event"></div>
-            </div>
-            <div class="release">
-                <h3>Is There A Release Date?</h3>
-                <h2 class="release-date">2025</h2>
             </div>
         </main>
         <footer>
-            <div>
+            <div class="fleft">
                 <p>&copy;<span id="year"></span> Michael Miller</p>
                 <p id="last-modified"></p>
             </div>
             <a href="https://www.teamcherry.com.au/">
                 <img src="images/team-cherry.png" alt="Team Cherry Logo" loading="lazy">                
             </a>
-            <div>
+            <div class="fright">
                 <p>This site updates as frequently as Silksong. Expect Delays</p>
                 <p>Team Cherry had no hand in this site's creation</p>
                 <p>News may or may not be verified. Proceed with caution</p>
