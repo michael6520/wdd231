@@ -7,6 +7,30 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+#modal {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    padding: 20px;
+    border-radius: 12px 0;
+    border: 2px solid white;
+    background: rgb(100, 0, 0);
+    z-index: 999;
+}
+
+#close-modal {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 2px; right: 5px;
+}
+
+#modal-text {
+    color: white;
+
+}
+
 .release {
     display: flex;
     flex-direction: column;

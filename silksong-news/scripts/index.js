@@ -4,6 +4,25 @@ import { wayfind } from "./utils.js";
 import { fillFooter } from "./utils.js";
 import { fetchJSON } from "./utils.js";
 
+function modal() {
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('close-modal');
+    const modalText = document.getElementById('modal-text')
+    const hasVisited = localStorage.getItem('hasVisited');
+    
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    if (hasVisited) {
+        modalText.textContent = 'Welcome back, there\'s still no news';
+    }
+    else {
+        modalText.textContent = 'Welcome! If there were news to report, you\'d find it here';
+        localStorage.setItem('hasVisited', 'true');
+    }
+}
+
 async function embedVideo() {
     const key = 'AIzaSyCGsoF_WSOOOIRmu-Gunb1a14a6mQ2nGeg'
     const id = 'UC9OmOMZS6rU0_jIdZOxSHxw'
@@ -75,6 +94,7 @@ startCountdown();
 toggleMenu();
 wayfind();
 fillFooter();
+modal();
 embedVideo();
 fillEvents();
 rumor();

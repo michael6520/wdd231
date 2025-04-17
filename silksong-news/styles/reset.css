@@ -89,6 +89,10 @@ footer img {
 }
 
 @media (max-width: 1024px) {
+    .countdown {
+        font-size: 3.5vw;
+    }
+    
     nav {
         display: none;
     }
@@ -111,7 +115,7 @@ footer img {
         background: none;
         border: none;
         color: white;
-        font-size: 24px;
+        font-size: 3.5vw;
     }
 
     footer {

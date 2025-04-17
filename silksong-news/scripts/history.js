@@ -36,7 +36,7 @@ async function writeHistory() {
     }
 }
 
-function handleModalPosition() { 
+function handleKeyPosition() { 
     const key = document.querySelector('.key');
     const topThree = document.querySelector('.top-three');
     const header = document.querySelector('header');
@@ -44,9 +44,6 @@ function handleModalPosition() {
     
     if (window.innerWidth < 1025) {
         key.classList.remove('stuck');
-        if (!topThree.contains(key)) {
-            topThree.appendChild(key);
-        }
     }
     else {
         if (headerRect.bottom > 0) {
@@ -66,6 +63,6 @@ toggleMenu();
 wayfind();
 fillFooter();
 writeHistory();
-handleModalPosition();
-window.addEventListener('scroll', handleModalPosition);
-window.addEventListener('resize', handleModalPosition);
+handleKeyPosition();
+window.addEventListener('scroll', handleKeyPosition);
+window.addEventListener('resize', handleKeyPosition);
